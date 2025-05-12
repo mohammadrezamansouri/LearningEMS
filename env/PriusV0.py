@@ -5,7 +5,7 @@ from gym import spaces
 import os
 import sys
 
-sys.path.append('/content/LearningEMS/env/units')
+sys.path.append('....../env/units')
 from env.units.Prius_model_base import Prius_model
 
 # 单个工况测试
