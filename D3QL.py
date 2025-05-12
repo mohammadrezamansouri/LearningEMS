@@ -10,9 +10,9 @@ import pandas as pd
 from torch.utils.tensorboard import SummaryWriter
 from env.PriusV0 import PriusEnv
 
-PATH1 = "....../Models/D3QL/WLTC_"
+PATH1 = "/content/LearningEMS/Models/D3QL/WLTC_"
 
-PATH2 = "....../Result/D3QL/WLTC_"
+PATH2 = "/content/LearningEMS/Result/D3QL/WLTC_"
 
 device = torch.device("cuda:0") if torch.cuda.is_available() else torch.device("cpu")
 
