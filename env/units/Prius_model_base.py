@@ -39,7 +39,7 @@ class Prius_model():
         Eng_spd_list = Eng_spd_list[np.newaxis, :]
         Eng_trq_list = np.arange(0, 111, 5) * (121 / 110)
         Eng_trq_list = Eng_trq_list[np.newaxis, :]
-        data_path = '....../env/units/Eng_bsfc_map.mat'
+        data_path = '/content/LearningEMS/env/units/Eng_bsfc_map.mat'
         data = scio.loadmat(data_path)
         Eng_bsfc_map = data['Eng_bsfc_map']    
         self.Eng_trq_maxP = [-4.1757e-009, 6.2173e-006, -3.4870e-003, 9.1743e-001, 2.0158e+001]
@@ -55,7 +55,7 @@ class Prius_model():
         Mot_trq_list = np.arange(-400, 401, 10)
         
         # motor efficiency map
-        data_path1 = '....../env/units/Mot_eta_quarter.mat'
+        data_path1 = '/content/LearningEMS/env/units/Mot_eta_quarter.mat'
         data1 = scio.loadmat(data_path1)
         Mot_eta_quarter = data1['Mot_eta_quarter']
         Mot_eta_alltrqs = np.concatenate(([np.fliplr(Mot_eta_quarter[:, 1:]), Mot_eta_quarter]), axis = 1)
